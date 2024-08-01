@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Energia Solar</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Energia Solar</h1>
+        <form method="post">
+            <label for="consumo">Consumo de Energia (kWh/mês):</label>
+            <input type="text" id="consumo" name="consumo" required><br>
+            <label for="potencia_painel">Potência do Painel Solar (kW):</label>
+            <input type="text" id="potencia_painel" name="potencia_painel" required><br>
+            <label for="perda_sistema">Perda no Sistema (%):</label>
+            <input type="text" id="perda_sistema" name="perda_sistema" required><br>
+            <label for="irradiacao_media">Irradiação Média Diária (kWh/m²):</label>
+            <input type="text" id="irradiacao_media" name="irradiacao_media" required><br>
+            <label for="altura_painel">Altura do Painel (m):</label>
+            <input type="text" id="altura_painel" name="altura_painel" required><br>
+            <label for="largura_painel">Largura do Painel (m):</label>
+            <input type="text" id="largura_painel" name="largura_painel" required><br>
+            <input type="submit" value="Calcular">
+        </form>
+    </div>
+</body>
+</html>

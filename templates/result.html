@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultados</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Resultados da Calculadora</h1>
+        <div class="results">
+            <p>Número de Painéis Necessários: {{ num_paineis }}</p>
+            <p>Área Total Necessária: {{ area_total }} m²</p>
+            <a href="/">Voltar</a>
+        </div>
+    </div>
+</body>
+</html>
